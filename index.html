@@ -288,15 +288,25 @@
 <body class="hv2 hv2-home h-home2 top-nav">
 
     <nav class="navbar navbar-expand-lg hv2-top-nav hv2-big-menu" id="myNavbar">
-
         <style>
-            /* Countdown Timer Styles */
+            /* Navbar Styles */
+            .navbar-menu {
+                display: flex;
+                justify-content: space-between; /* Distribute space evenly between logo and timer */
+                align-items: center; /* Vertically centers the items */
+                padding: 0 20px; /* Adds some padding to the left and right */
+                box-sizing: border-box; /* Ensures padding does not affect total width */
+            }
+    
+            .logo-container {
+                flex: 1; /* Allows the logo container to take up available space */
+                display: flex;
+                align-items: center; /* Vertically centers the logo */
+            }
+    
             .timer-container {
                 display: flex;
-                justify-content: center; /* Center the timer horizontally */
-                align-items: center; /* Vertically center the timer */
-                margin: 0 auto; /* Center within the navbar */
-                flex: 1; /* Allow the container to grow and take up available space */
+                align-items: center; /* Vertically centers the timer */
             }
     
             .container {
@@ -305,7 +315,7 @@
             }
     
             h2 {
-                margin: 0 0 20px 0; /* Margin at the bottom only */
+                margin: 0; /* Remove margin for navbar layout */
                 font: 300 1.2em "Lato"; /* Adjust font size */
                 text-transform: uppercase;
             }
@@ -313,19 +323,19 @@
             #timer {
                 display: flex;
                 justify-content: center;
-                gap: 10px; /* Adjust spacing between time boxes */
+                gap: 8px; /* Adjust spacing between time boxes */
             }
     
             .time-box {
                 background: #fff;
                 border-radius: 8px;
                 box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); /* Adjust shadow for smaller size */
-                padding: 10px; /* Adjust padding for smaller size */
+                padding: 5px; /* Adjust padding for smaller size */
                 text-align: center;
             }
     
             .time-value {
-                font-size: 2em; /* Adjust font size */
+                font-size: 1.5em; /* Adjust font size */
                 color: #de4848;
                 display: block;
             }
@@ -335,21 +345,20 @@
                 color: #1a1a1a;
             }
     
-            .navbar-menu {
-                display: flex;
-                justify-content: space-between; /* Ensure space between items */
-                align-items: center; /* Vertically center the navbar items */
-            }
-    
-            .navbar-brand {
-                flex-shrink: 0; /* Prevent shrinking of the brand logo */
+            .navbar-brand img {
+                max-width: 100%; /* Ensure logo scales properly */
+                height: auto;
             }
         </style>
     
         <div class="navbar-menu">
-            <a href="/" class="navbar-brand" title="agorapulse">
-              
-            </a>
+            <div class="logo-container">
+                <a href="/" class="navbar-brand" title="agorapulse">
+                    <img class="brand" alt="agorapulse" src="/assets/logo.svg" width="140" height="29">
+                </a>
+            </div>
+    
+            <!-- Timer Section -->
             <div class="timer-container">
                 <div id="timer">
                     <div class="time-box">
@@ -369,13 +378,6 @@
                         <span class="time-label">Seconds</span>
                     </div>
                 </div>
-            </div>
-            <div class="navbar-mobile-shortcuts">
-                <a class="hv2-button orange" href="/request-demo/" id="scroll-en-nav-Demo">See a demo<span
-                        class="arrow"></span></a>
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#mainNav"
-                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation" id="navcollapse">
-                </button>
             </div>
         </div>
     
@@ -408,6 +410,9 @@
             countdownTimer(offerEndDate);
         </script>
     </nav>
+    
+    
+    
     
 
 
@@ -643,172 +648,7 @@
                         </div>
                     </div>
 
-                    <div class="block-business__card-item">
-                        <div class="block-business__card-inner">
-
-
-
-
-                            <h3 class="block-business__card-title">Enhance team<br>collaboration</h3>
-
-
-                            <div class="block-business__card-text">
-                                <p>Remove the internal friction and downright annoyance of having to send multiple
-                                    emails and messages to get approvals.</p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="block-business__card-item">
-                        <div class="block-business__card-inner">
-
-
-
-
-                            <h3 class="block-business__card-title">Empower your team with actionable insights</h3>
-
-
-                            <div class="block-business__card-text">
-                                <p>Measure the metrics that matter to your brand. Get the insights and data you need to
-                                    craft posts and cultivate conversations that grow your business.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-
-                <div class="block-business__heading" data-sal="slide-up" data-sal-duration="600" data-sal-delay="200">
-                    <div class="block-business__text">
-                    </div>
-                </div>
-
-
-                <div class="block-business__cards">
-
-
-                    <div class="block-business__card-item" data-sal="slide-up" data-sal-duration="600"
-                        data-sal-delay="0">
-                        <div class="block-business__card-inner">
-
-
-
-                            <h3 class="block-business__card-title">Streamline your social<br>content management</h3>
-
-
-                            <div class="block-business__card-text">
-                                <p>Everything you need to easily manage your content and grow your brand across all
-                                    major social media platforms.</p>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    <div class="block-business__card-item" data-sal="slide-up" data-sal-duration="600"
-                        data-sal-delay="200">
-                        <div class="block-business__card-inner">
-
-
-
-
-                            <h3 class="block-business__card-title">Enhance team<br>collaboration</h3>
-
-
-                            <div class="block-business__card-text">
-                                <p>Remove the internal friction and downright annoyance of having to send multiple
-                                    emails and messages to get approvals.</p>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    <div class="block-business__card-item" data-sal="slide-up" data-sal-duration="600"
-                        data-sal-delay="400">
-                        <div class="block-business__card-inner">
-
-
-
-
-                            <h3 class="block-business__card-title">Empower your team with actionable insights</h3>
-
-
-                            <div class="block-business__card-text">
-                                <p>Measure the metrics that matter to your brand. Get the insights and data you need to
-                                    craft posts and cultivate conversations that grow your business.</p>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="block-business__cards mobile">
-
-                    <div class="block-business__card-item">
-                        <div class="block-business__card-inner">
-
-
-
-
-                            <h3 class="block-business__card-title">Streamline your social<br>content management</h3>
-
-
-                            <div class="block-business__card-text">
-                                <p>Everything you need to easily manage your content and grow your brand across all
-                                    major social media platforms.</p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="block-business__card-item">
-                        <div class="block-business__card-inner">
-
-
-
-
-                            <h3 class="block-business__card-title">Enhance team<br>collaboration</h3>
-
-
-                            <div class="block-business__card-text">
-                                <p>Remove the internal friction and downright annoyance of having to send multiple
-                                    emails and messages to get approvals.</p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="block-business__card-item">
-                        <div class="block-business__card-inner">
-
-
-
-
-                            <h3 class="block-business__card-title">Empower your team with actionable insights</h3>
-
-
-                            <div class="block-business__card-text">
-                                <p>Measure the metrics that matter to your brand. Get the insights and data you need to
-                                    craft posts and cultivate conversations that grow your business.</p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-
-
-
-
-
-
-
-
-
-            </div>
+                   
         </section>
 
 
