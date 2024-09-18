@@ -1,0 +1,112 @@
+.block-social {
+    background-color: #FFEFE9;
+}
+
+.block-social .block-social__info {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 250px;
+    padding: 40px 0 0;
+}
+
+.block-social .block-social__heading {
+    max-width: 498px;
+}
+
+.block-social .block-social__heading h2 {
+    font-family: "Averta", sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 48px;
+    letter-spacing: -0.01em;
+    color: #212e44;
+}
+
+.block-social .block-social__heading h2 span {
+    color: #ff6726;
+}
+
+.block-social .block-social__image {
+    max-width: 489px;
+}
+
+.block-social .block-social__image img {
+    max-width: 100%;
+}
+
+.block-social .block-social__buttons {
+    min-width: 164px;
+}
+
+.block-social .block-social__buttons .block-social__buttons-item {
+    margin-bottom: 16px;
+}
+
+.block-social .block-social__buttons .hv2-button {
+    min-width: 164px;
+}
+
+.block-social .block-social__buttons .hv2-button .arrow {
+    margin-left: 4px;
+    width: 14px;
+    flex: 0 0 14px;
+}
+
+@media (max-width: 991px) {
+    .block-social .block-social__heading {
+        max-width: 280px;
+    }
+    .block-social .block-social__heading h2 {
+        font-size: 28px;
+        line-height: 30px;
+    }
+    .block-social .block-social__image {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        max-width: 267px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 599px) {
+    .block-social {
+        padding-top: 60px;
+        padding-bottom: 0;
+    }
+    .block-social .block-social__info {
+        flex-wrap: wrap;
+        min-height: auto;
+        padding: 0;
+    }
+    .block-social .block-social__info>div {
+        width: 100%;
+    }
+    .block-social .block-social__heading {
+        max-width: 100%;
+    }
+    .block-social .block-social__heading h2 {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 26px;
+    }
+    .block-social .block-social__image {
+        position: relative;
+        order: 3;
+    }
+    .block-social .block-social__buttons {
+        min-width: auto;
+    }
+    .block-social .block-social__buttons .block-social__buttons-item {
+        margin-bottom: 16px;
+    }
+    .block-social .block-social__buttons .hv2-button {
+        min-width: auto;
+        width: 100%;
+    }
+}
+
+/*# sourceMappingURL=block_social.css.map*/

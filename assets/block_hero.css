@@ -1,0 +1,350 @@
+.block-hero {
+    position: relative;
+    z-index: 1;
+    padding-top: 152px;
+    padding-bottom: 80px;
+}
+
+.block-hero .block-hero__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    box-sizing: border-box;
+}
+
+.block-hero .block-hero__row .block-hero__col {
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.block-hero .block-hero__row .block-hero__col-content {
+    flex: 0 0 53.2%;
+    max-width: 53.2%;
+    margin-top: 30px;
+}
+
+.block-hero .block-hero__row .block-hero__col-image {
+    flex: 0 0 46.8%;
+    max-width: 46.8%;
+}
+
+.block-hero .block-hero__heading {
+    max-width: 604px;
+}
+
+.block-hero .block-hero__heading h1 {
+    font-family: "Averta", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 67px;
+    letter-spacing: -0.01em;
+    color: #212e44;
+    margin: 0 0 24px;
+}
+
+.block-hero .block-hero__heading h1 span {
+    color: #ff6726;
+}
+
+.block-hero .block-hero__content {
+    max-width: 547px;
+}
+
+.block-hero .block-hero__content p:last-child {
+    margin-bottom: 0;
+}
+
+.block-hero .block-hero__content,
+.block-hero .block-hero__content p {
+    font-family: "Averta", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #212e44;
+    margin-bottom: 24px;
+}
+
+.block-hero .block-hero__info p:last-child {
+    margin-bottom: 0;
+}
+
+.block-hero .block-hero__info,
+.block-hero .block-hero__info p {
+    font-family: "Averta", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #212e44;
+    margin-bottom: 12px;
+}
+
+.block-hero .block-hero__buttons {
+    margin-bottom: 8px;
+}
+
+.block-hero .block-hero__buttons .hv2-button {
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+.block-hero .block-hero__buttons .hv2-button:last-child {
+    margin-right: 0;
+}
+
+.block-hero .block-hero__social-networks>img {
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+.block-hero .block-hero__social-networks>img:last-child {
+    margin-right: 0;
+}
+
+.block-hero .block-hero__side-image.mobile {
+    display: none;
+}
+
+.block-hero .block-hero__side-image img {
+    max-width: 100%;
+}
+
+.block-hero .block-hero__info-block {
+    margin-top: 69px;
+}
+
+.block-hero .block-hero__info-block .block-hero__info-heading {
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.block-hero .block-hero__info-block .block-hero__info-heading img {
+    flex: 0 0 30px;
+}
+
+.block-hero .block-hero__info-block .block-hero__info-heading h4 {
+    position: relative;
+    font-family: "Averta", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 10px;
+    margin-bottom: 0;
+}
+
+.block-hero .block-hero__info-block .block-hero__info-heading h4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 1px;
+    margin: auto;
+    background-color: #212e44;
+}
+
+.block-hero .block-hero__info-block .block-hero__info-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px 17px;
+}
+
+.block-hero .block-hero__info-block .block-hero__info-list .block-hero__info-item {
+    font-family: "Averta", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #858FA1;
+    width: 50%;
+    padding: 0 15px;
+}
+
+.block-hero .block-hero__info-block .block-hero__info-list .block-hero__info-item:nth-child(1) {
+    order: 1;
+}
+
+.block-hero .block-hero__info-block .block-hero__info-list .block-hero__info-item:nth-child(2) {
+    order: 3;
+}
+
+.block-hero .block-hero__info-block .block-hero__info-list .block-hero__info-item:nth-child(3) {
+    order: 2;
+}
+
+.block-hero .block-hero__info-block .block-hero__info-list .block-hero__info-item:nth-child(4) {
+    order: 4;
+}
+
+.block-hero .block-hero__brands {
+    margin-top: 117px;
+}
+
+.block-hero .block-hero__brands .block-hero__logo-heading {
+    margin-bottom: 22px;
+}
+
+.block-hero .block-hero__brands .block-hero__logo-heading h3 {
+    font-family: "Averta", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.block-hero .block-hero__brands .block-hero__logo img {
+    max-width: 100%;
+}
+
+.block-hero .block-hero__brands .slick-slider {
+    position: relative;
+}
+
+.block-hero .block-hero__brands .slick-list::after,
+.block-hero .block-hero__brands .slick-list::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    background: linear-gradient(270.05deg, rgba(255, 255, 255, 0) 29.29%, #FFFFFF 57.63%);
+    opacity: .5;
+    z-index: 1;
+}
+
+.block-hero .block-hero__brands .slick-list::after {
+    right: 0;
+}
+
+.block-hero .block-hero__brands .slick-list::before {
+    left: 0;
+}
+
+@media (max-width: 991px) {
+    .block-hero {
+        padding-top: 80px;
+    }
+    .block-hero .block-hero__row .block-hero__col-content {
+        margin-top: 0;
+    }
+    .block-hero .block-hero__heading h1 {
+        font-size: 40px;
+        line-height: 44px;
+        margin: 0 0 16px;
+    }
+    .block-hero .block-hero__content,
+    .block-hero .block-hero__content p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .block-hero .block-hero__info,
+    .block-hero .block-hero__info p {
+        font-size: 12px !important;
+        line-height: 15px;
+    }
+    .block-hero .block-hero__buttons {
+        margin-bottom: 12px;
+    }
+    .block-hero .block-hero__social-networks>img {
+        max-width: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .block-hero .block-hero__heading h1 {
+        margin: 0 0 32px;
+    }
+    .block-hero .block-hero__side-image.mobile {
+        display: block;
+    }
+    .block-hero .block-hero__row .block-hero__col-content,
+    .block-hero .block-hero__row .block-hero__col-image {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .block-hero .block-hero__row .block-hero__col-image {
+        display: none;
+    }
+    .block-hero .block-hero__row .block-hero__col-content {
+        margin-bottom: 12px;
+    }
+    .block-hero .block-hero__info-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .block-hero .block-hero__info-block .block-hero__info-heading {
+        flex: 0 0 224px;
+    }
+    .block-hero .block-hero__info-block .block-hero__info-heading h4::before {
+        height: 80%;
+    }
+    .block-hero .block-hero__info-block .block-hero__info-list {
+        max-width: 360px;
+        margin-bottom: 0;
+    }
+    .block-hero .block-hero__info-block .block-hero__info-list .block-hero__info-item {
+        font-size: 10px;
+        line-height: 14px;
+        margin-bottom: 10px;
+    }
+    .block-hero .block-hero__info-block .block-hero__info-list .block-hero__info-item:nth-child(1) {
+        order: 1;
+    }
+    .block-hero .block-hero__info-block .block-hero__info-list .block-hero__info-item:nth-child(2) {
+        order: 2;
+    }
+    .block-hero .block-hero__info-block .block-hero__info-list .block-hero__info-item:nth-child(3) {
+        order: 3;
+    }
+    .block-hero .block-hero__info-block .block-hero__info-list .block-hero__info-item:nth-child(4) {
+        order: 4;
+    }
+}
+
+@media (max-width: 599px) {
+    .block-hero {
+        padding-top: 86px;
+        padding-bottom: 60px;
+    }
+    .block-hero .block-hero__buttons {
+        margin-bottom: 0;
+    }
+    .block-hero .block-hero__buttons .hv2-button {
+        width: 100%;
+    }
+    .block-hero .block-hero__info {
+        margin-bottom: 15px;
+    }
+    .block-hero .block-hero__info,
+    .block-hero .block-hero__social-networks {
+        text-align: center;
+    }
+    .block-hero .block-hero__info-block {
+        flex-wrap: wrap;
+        margin-top: 52px;
+    }
+    .block-hero .block-hero__info-block .block-hero__info-heading {
+        flex: 0 0 100%;
+    }
+    .block-hero .block-hero__info-block .block-hero__info-heading h4::before {
+        height: 80%;
+    }
+    .block-hero .block-hero__info-block .block-hero__info-list {
+        max-width: 100%;
+    }
+}
+
+/*# sourceMappingURL=block_hero.css.map*/

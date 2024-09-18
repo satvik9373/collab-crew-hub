@@ -1,0 +1,1 @@
+data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='15' viewBox='0 0 10 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M2.29297 1.77637L8.09183 7.58036L2.29297 13.3844' stroke='%23FBFBFC' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e

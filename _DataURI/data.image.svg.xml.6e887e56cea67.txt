@@ -1,0 +1,1 @@
+data:image/svg+xml;charset=UTF-8,%3csvg width='15' height='8' viewBox='0 0 15 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='15' height='2.06897' rx='1.03448' fill='%23212E44'/%3e%3crect y='5.6875' width='15' height='2.06897' rx='1.03448' fill='%23212E44'/%3e%3c/svg%3e

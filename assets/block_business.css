@@ -1,0 +1,340 @@
+.block-business {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 115px;
+    padding-bottom: 95px;
+    position: relative;
+    margin-top: -20px;
+}
+
+.block-business .block-business__info-logo {
+    max-width: 138px;
+    margin-bottom: 17px;
+}
+
+.block-business .block-business__info-logo img {
+    max-width: 100%;
+}
+
+.block-business .block-business__heading {
+    margin-bottom: 72px;
+}
+
+.block-business .block-business__heading h2 {
+    font-family: "Averta", sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 40px;
+    letter-spacing: -0.01em;
+    color: #212e44;
+    max-width: 629px;
+}
+
+.block-business .block-business__heading h2 span {
+    color: #ff6726;
+}
+
+.block-business .block-business__heading .block-business__text,
+.block-business .block-business__heading .block-business__text p {
+    font-family: "Averta", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #212e44;
+    max-width: 690px;
+}
+
+.block-business .block-business__cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+    padding-bottom: 12px;
+}
+
+.block-business .block-business__cards.mobile {
+    display: none;
+}
+
+.block-business .block-business__cards .slick-list,
+.block-business .block-business__cards .slick-track {
+    display: flex !important;
+}
+
+.block-business .block-business__cards .slick-slide,
+.block-business .block-business__cards .slick-slide>div {
+    height: 100% !important;
+}
+
+.block-business .block-business__cards .slick-arrow {
+    position: absolute;
+    bottom: 44px;
+    margin: 0 auto;
+    transform: translateY(50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: 10px 15px;
+    background-position: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.block-business .block-business__cards .slick-arrow.arrow-left {
+    left: 0;
+    right: 56px;
+    border: 2px solid #ff6726;
+    background-color: #FFFFFF;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='15' viewBox='0 0 10 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M7.90527 13.2393L2.10641 7.43526L7.90527 1.63127' stroke='%23FF6726' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");
+}
+
+.block-business .block-business__cards .slick-arrow.arrow-left:hover {
+    background-color: #ff6726;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='15' viewBox='0 0 10 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M7.90527 13.2393L2.10641 7.43526L7.90527 1.63127' stroke='%23FBFBFC' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");
+}
+
+.block-business .block-business__cards .slick-arrow.arrow-right {
+    right: 0;
+    left: 56px;
+    background-color: #ff6726;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='15' viewBox='0 0 10 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M2.29297 1.77637L8.09183 7.58036L2.29297 13.3844' stroke='%23FBFBFC' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");
+}
+
+.block-business .block-business__cards .slick-arrow.arrow-right:hover {
+    border: 2px solid #ff6726;
+    background-color: #FFFFFF;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='15' viewBox='0 0 10 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M2.29297 1.77637L8.09183 7.58036L2.29297 13.3844' stroke='%23FF6726' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");
+}
+
+.block-business .block-business__card-item {
+    padding: 0 16px;
+    margin-bottom: 28px;
+    width: 33.33%;
+}
+
+.block-business .block-business__card-item .block-business__card-inner {
+    padding: 24px 40px 24px 40px;
+    border-radius: 16px;
+    background: #FBFBFC;
+    box-shadow: 0px 4px 20px 0px #FF67260D;
+    height: 100%;
+}
+
+.block-business .block-business__card-item .block-business__card-icon {
+    margin-bottom: 27px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #FFEFE9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-business .block-business__card-item .block-business__card-icon img {
+    max-height: 29px;
+    object-fit: contain;
+}
+
+.block-business .block-business__card-item .block-business__card-title {
+    font-family: "Averta", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #212e44;
+    word-break: break-word;
+    margin-bottom: 20px;
+}
+
+.block-business .block-business__card-item .block-business__card-text,
+.block-business .block-business__card-item .block-business__card-text p {
+    font-family: "Averta", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    color: #858FA1;
+}
+
+.block-business .block-business__card-item .block-business__card-text p:last-child,
+.block-business .block-business__card-item .block-business__card-text p p:last-child {
+    margin-bottom: 0;
+}
+
+.block-business .block-business__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px;
+    padding: 32px 65px 16px 65px;
+}
+
+.block-business .block-business__info>div {
+    padding: 0 16px;
+}
+
+.block-business .block-business__info-title {
+    font-family: "Averta", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #212e44;
+    margin-bottom: 21px;
+}
+
+.block-business .block-business__info-text {
+    font-family: "Averta", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    color: #ff6726;
+}
+
+.block-business .block-business__info-text p:last-child {
+    margin-bottom: 0;
+}
+
+.block-business .block-business__info-details {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    grid-gap: 16px;
+    gap: 16px;
+}
+
+.block-business .block-business__info-details .block-business__info-name {
+    font-family: "Averta", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    color: #212e44;
+}
+
+.block-business .block-business__info-image {
+    width: 168px;
+    height: 168px;
+    overflow: hidden;
+    border-radius: 91px 9px 9px 91px;
+    background-color: #ff6726;
+    margin-left: 30px;
+}
+
+.block-business .block-business__info-image img {
+    max-width: 100%;
+}
+
+@media (max-width: 991px) {
+    .block-business {
+        padding-top: 66px;
+        padding-bottom: 58px;
+    }
+    .block-business .block-business__heading {
+        margin-bottom: 40px;
+    }
+    .block-business .block-business__heading h2 {
+        font-size: 32px;
+        line-height: 35px;
+        margin: 0 0 16px;
+    }
+    .block-business .block-business__heading .block-business__text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .block-business .block-business__cards {
+        margin: 0 -15px 14px;
+    }
+    .block-business .block-business__card-item {
+        padding: 0 8px;
+        margin-bottom: 16px;
+    }
+    .block-business .block-business__card-item .block-business__card-inner {
+        padding: 24px 26px;
+        border-radius: 16px;
+    }
+    .block-business .block-business__info {
+        border-radius: 4px;
+        padding: 30px 28px;
+    }
+    .block-business .block-business__info-text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .block-business .block-business__info-details .block-business__info-name {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .block-business .block-business__info-image {
+        width: 149px;
+        height: 149px;
+        border-radius: 78px 7px 7px 78px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 599px) {
+    .block-business {
+        padding-top: 55px;
+        padding-bottom: 50px;
+    }
+    .block-business .block-business__heading h2 {
+        font-size: 28px;
+        line-height: 30px;
+    }
+    .block-business .block-business__heading .block-business__text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .block-business .block-business__cards {
+        display: none;
+    }
+    .block-business .block-business__cards.mobile {
+        display: block;
+        margin: 0 -25px 14px;
+        padding-bottom: 100px;
+    }
+    .block-business .block-business__card-item {
+        height: 100%;
+    }
+    .block-business .block-business__info {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        border-radius: 4px;
+        padding: 46px 30px 40px;
+    }
+    .block-business .block-business__info>div {
+        width: 100%;
+    }
+    .block-business .block-business__info .block-business__info-text {
+        margin-bottom: 20px;
+    }
+    .block-business .block-business__info-details {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    .block-business .block-business__info-details .block-business__info-name {
+        width: 100%;
+    }
+    .block-business .block-business__info-image {
+        width: 55px;
+        height: 55px;
+        border-radius: 30px 3px 3px 30px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 599px) {
+    .block-business .block-business__info-logo {
+        max-width: 88px;
+    }
+}
+
+/*# sourceMappingURL=block_business.css.map*/

@@ -1,0 +1,285 @@
+.block-reviews {
+    padding: 110px 0;
+}
+
+.block-reviews h2 {
+    font-family: "Averta", sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 40px;
+    letter-spacing: -0.01em;
+    color: #212e44;
+    margin-bottom: 65px;
+    text-align: center;
+}
+
+.block-reviews h2 span {
+    color: #ff6726;
+}
+
+@media (min-width: 500px) and (max-width: 991px) {
+    .block-reviews h2 {
+        margin-bottom: 56px;
+    }
+}
+
+.block-reviews .show-mobile-row {
+    display: none;
+}
+
+.block-reviews .inner-detail-review {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.block-reviews .inner-detail-review .detail-data-title-review {
+    text-align: center;
+}
+
+.block-reviews .inner-detail-review .detail-data-title-review h6 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 20px;
+    min-height: 48px;
+    text-align: center;
+    position: relative;
+}
+
+.block-reviews .inner-detail-review .detail-data-title-review h6 .icon-heart {
+    margin-right: 10px;
+}
+
+.block-reviews .inner-detail-review .detail-data-title-review h6 span:before {
+    content: '';
+    background-image: url(/assets/hv2-home2/heart-icon.svg);
+    width: 20.82px;
+    height: 20.82px;
+    min-width: 20.82px;
+    min-height: 20.82px;
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+}
+
+@media (min-width: 500px) and (max-width: 991px) {
+    .block-reviews .inner-detail-review .detail-data-title-review h6 {
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+    .block-reviews .inner-detail-review .detail-data-title-review h6 .icon-heart {
+        display: block;
+        margin: 0 auto 10px;
+    }
+    .block-reviews .inner-detail-review .detail-data-title-review h6 span {
+        width: 100%;
+    }
+    .block-reviews .inner-detail-review .detail-data-title-review h6 span:before {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 1051px) {
+    .block-reviews .inner-detail-review .detail-data-title-review h6 br {
+        display: none;
+    }
+}
+
+.block-reviews .inner-detail-review .detail-data-title-review p {
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    font-weight: 400;
+}
+
+.block-reviews .inner-detail-review .detail-data-title-review p strong {
+    font-weight: 700;
+}
+
+.block-reviews .inner-detail-review .detail-review-person {
+    box-shadow: 0px 24px 20px 0px #212E4405;
+    border: 1px solid #858FA133;
+    border-radius: 16px;
+    padding: 28px 30px;
+    width: 100%;
+}
+
+.block-reviews .inner-detail-review .detail-review-person .author-review {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.block-reviews .inner-detail-review .detail-review-person .author-review figure {
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+    border-radius: 100px;
+    position: relative;
+    margin: 0 15px 0 0;
+}
+
+.block-reviews .inner-detail-review .detail-review-person .author-review figure img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.block-reviews .inner-detail-review .detail-review-person .author-review .review-name {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #212E44;
+}
+
+.block-reviews .inner-detail-review .detail-review-person .author-review .review-position {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #212E44;
+}
+
+.block-reviews .inner-detail-review .detail-review-person .detail-review-item p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #5D6A82;
+}
+
+.block-reviews .inner-detail-review .detail-review-person .detail-review-item p:last-child {
+    margin-bottom: 0;
+}
+
+.block-reviews .slider-item-data-js .slick-arrow {
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -80px;
+    top: auto;
+    transform: translate(-50%, 0px);
+}
+
+.block-reviews .slider-item-data-js .slick-arrow::before {
+    content: none;
+}
+
+.block-reviews .slider-item-data-js .slick-arrow.slick-prev {
+    background-image: url(/assets/hv2-home2/arrow-left.svg);
+    left: calc(50% - 30px);
+}
+
+.block-reviews .slider-item-data-js .slick-arrow.slick-next {
+    background-image: url(/assets/hv2-home2/arrow-right.svg);
+    left: calc(50% + 30px);
+}
+
+@media (max-width: 991px) {
+    .block-reviews {
+        padding: 77px 0;
+    }
+    .block-reviews h2 {
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 35px;
+        letter-spacing: -0.01em;
+        text-align: center;
+    }
+    .block-reviews .inner-detail-review .detail-data-title-review {
+        text-align: center;
+    }
+    .block-reviews .inner-detail-review .detail-data-title-review h6 {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    .block-reviews .inner-detail-review .detail-data-title-review p {
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0em;
+    }
+    .block-reviews .inner-detail-review .detail-review-person .author-review figure {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+    }
+    .block-reviews .inner-detail-review .detail-review-person .author-review .review-name {
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .block-reviews .inner-detail-review .detail-review-person .author-review .review-position {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .block-reviews .inner-detail-review .detail-review-person .detail-review-item p {
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0em;
+    }
+}
+
+@media (max-width: 768px) {
+    .block-reviews {
+        margin-bottom: 71px;
+    }
+    .block-reviews h2 {
+        margin-bottom: 40px;
+    }
+    .block-reviews .show-mobile-row {
+        display: block;
+    }
+    .block-reviews .show-desktop-table {
+        display: none;
+    }
+}
+
+.icon-heart {
+    background-image: url(/assets/hv2-home2/heart-icon.svg);
+    width: 20.82px;
+    height: 20.82px;
+    min-width: 20.82px;
+    min-height: 20.82px;
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: none !important;
+}
+
+/*# sourceMappingURL=block_reviews.css.map*/
