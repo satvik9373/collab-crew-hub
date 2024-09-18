@@ -289,24 +289,14 @@
 
     <nav class="navbar navbar-expand-lg hv2-top-nav hv2-big-menu" id="myNavbar">
         <style>
-            /* Navbar Styles */
-            .navbar-menu {
-                display: flex;
-                justify-content: space-between; /* Distribute space evenly between logo and timer */
-                align-items: center; /* Vertically centers the items */
-                padding: 0 20px; /* Adds some padding to the left and right */
-                box-sizing: border-box; /* Ensures padding does not affect total width */
-            }
-    
-            .logo-container {
-                flex: 1; /* Allows the logo container to take up available space */
-                display: flex;
-                align-items: center; /* Vertically centers the logo */
-            }
-    
+            /* Countdown Timer Styles */
             .timer-container {
                 display: flex;
+                justify-content: flex-end; /* Aligns timer to the right */
                 align-items: center; /* Vertically centers the timer */
+                margin-right: 40px; /* Adjusts space from the right edge */
+                /* Optional: Adjust left margin to shift the timer slightly to the left */
+                margin-left: auto; /* Pushes the timer container to the left within its space */
             }
     
             .container {
@@ -323,19 +313,19 @@
             #timer {
                 display: flex;
                 justify-content: center;
-                gap: 8px; /* Adjust spacing between time boxes */
+                gap: 10px; /* Adjust spacing between time boxes */
             }
     
             .time-box {
                 background: #fff;
                 border-radius: 8px;
                 box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); /* Adjust shadow for smaller size */
-                padding: 5px; /* Adjust padding for smaller size */
+                padding: 10px; /* Adjust padding for smaller size */
                 text-align: center;
             }
     
             .time-value {
-                font-size: 1.5em; /* Adjust font size */
+                font-size: 2em; /* Adjust font size */
                 color: #de4848;
                 display: block;
             }
@@ -345,17 +335,25 @@
                 color: #1a1a1a;
             }
     
-            .navbar-brand img {
-                max-width: 100%; /* Ensure logo scales properly */
-                height: auto;
+            .navbar-menu {
+                display: flex;
+                justify-content: space-between; /* Ensure space between items */
+                align-items: center; /* Vertically centers the navbar items */
             }
         </style>
     
         <div class="navbar-menu">
-            <div class="logo-container">
+            <div class="container">
                 <a href="/" class="navbar-brand" title="agorapulse">
-                    <img class="brand" alt="agorapulse" src="/assets/logo.svg" width="140" height="29">
+                    <img class="brand" alt="agorapulse" src="./logo.jpeg" width="100" height="auto">
                 </a>
+                <div class="navbar-mobile-shortcuts">
+                    <a class="hv2-button orange" href="/request-demo/" id="scroll-en-nav-Demo">See a demo<span
+                            class="arrow"></span></a>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#mainNav"
+                        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation" id="navcollapse">
+                    </button>
+                </div>
             </div>
     
             <!-- Timer Section -->
@@ -414,6 +412,7 @@
     
     
     
+    
 
 
     <link href="/assets/home2.css?6c9f92b407bcc35e1ed7" rel="stylesheet">
@@ -432,7 +431,7 @@
                         <div class="block-hero__inner">
 
                             <div class="block-hero__heading">
-                                <h1>Drive Real Impact on Social Media. <span>From Engagement to ROI.</span></h1>
+                                <h1>An agency that can drive extra ordinary  <span>results to your business.</span></h1>
                             </div>
 
 
@@ -445,10 +444,7 @@
 
                             <div class="block-hero__buttons">
 
-                                <a id="en-hero-Trial" data-mobile-signup="/signup/"
-                                    href="https://app.agorapulse.com/auth/signup?language=en" target="_self"
-                                    class="hv2-button white">Try for free now<span class="arrow"></span>
-                                </a>
+                             
 
                                 <a id="en-hero-Demo" href="/request-demo/" target="_self" class="hv2-button orange">Book
                                     a demo<span class="arrow"></span>
@@ -495,57 +491,7 @@
 
         <link href="/assets/block_brands.css?6c9f92b407bcc35e1ed7" rel="stylesheet">
         <script type="text/javascript" src="/assets/block_brands.js?6c9f92b407bcc35e1ed7" defer></script>
-        <section class="block-brands">
-            <div class="container">
-
-                <div class="block-brands__heading">
-                    <h3 data-sal="slide-up" data-sal-duration="600" data-sal-delay="200">Over 31K+ social media managers
-                        use our tool daily</h3>
-                </div>
-
-
-                <div class="block-brands__logos">
-
-                    <div class="block-brands__logo">
-                        <img src="/assets/hv2-home2/wwf-logo-3.svg" alt="wwf-logo" />
-                    </div>
-
-                    <div class="block-brands__logo">
-                        <img src="/assets/hv2-home2/danone-logo-3.svg" alt="danone-logo" />
-                    </div>
-
-                    <div class="block-brands__logo">
-                        <img src="/assets/hv2-home2/havas-logo-3.svg" alt="havas-logo" />
-                    </div>
-
-                    <div class="block-brands__logo">
-                        <img src="/assets/hv2-home2/decathlon-logo-3.svg" alt="decathlon-logo" />
-                    </div>
-
-                    <div class="block-brands__logo">
-                        <img src="/assets/hv2-home2/ogilvy-logo-3.svg" alt="ogilvy-logo" />
-                    </div>
-
-                    <div class="block-brands__logo">
-                        <img src="/assets/hv2-home2/mccann-logo-3.svg" alt="mccann-logo" />
-                    </div>
-
-                    <div class="block-brands__logo">
-                        <img src="/assets/hv2-home2/citadines-logo-3.svg" alt="citadines-logo" />
-                    </div>
-
-                    <div class="block-brands__logo">
-                        <img src="/assets/hv2-home2/isobar-logo-3.svg" alt="isobar-logo" />
-                    </div>
-
-                    <div class="block-brands__logo">
-                        <img src="/assets/hv2-home2/dove-logo-3.svg" alt="dove-logo" />
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
+     
 
 
         <link href="/assets/block_business.css?6c9f92b407bcc35e1ed7" rel="stylesheet">
@@ -709,7 +655,7 @@
                             <div class="block-hero__buttons">
 
                                 <a id="en-integrations" href="/integrations/" target="_self"
-                                    class="hv2-button white">See all integrations<span class="arrow"></span>
+                                    class="hv2-button white">Book a Demo<span class="arrow"></span>
                                 </a>
 
                             </div>
@@ -723,150 +669,33 @@
 
                                 <div>
                                     <figure class="icon-box-social">
-                                        <img src="/assets/hv2-home2/facebook-logo.svg" alt="facebook-logo"
-                                            title="facebook-logo">
+                                    <a href="https://www.facebook.com/profile.php?id=61559233890129"><img src="/assets/hv2-home2/facebook-logo.svg" alt="facebook-logo"
+                                            title="facebook-logo"></a> 
                                     </figure>
                                 </div>
 
                                 <div>
                                     <figure class="icon-box-social">
-                                        <img src="/assets/hv2-home2/youtube-logo.svg" alt="youtube-logo"
-                                            title="youtube-logo">
+                                     <a href="https://www.instagram.com/collabcrewhub_/"><img src="/assets/hv2-home2/instagram-logo.svg" alt="youtube-logo"
+                                            title="instagram-logo"></a>  
                                     </figure>
                                 </div>
 
                                 <div>
                                     <figure class="icon-box-social">
-                                        <img src="/assets/hv2-home2/tiktok-logo.svg" alt="tiktok-logo"
-                                            title="tiktok-logo">
+                                        <a href="https://in.pinterest.com/Collabcrewhub/"><img src="/assets/hv2-home2/pinterest-logo.svg" alt="tiktok-logo"
+                                            title="pinterest-logo"></a>
                                     </figure>
                                 </div>
 
                                 <div>
                                     <figure class="icon-box-social">
-                                        <img src="/assets/hv2-home2/pinterest-logo.svg" alt="pinterest-logo"
-                                            title="pinterest-logo">
+                                        <a href="https://www.linkedin.com/company/collab-crew-hub/"><img src="/assets/hv2-home2/linkedin-logo.svg" alt="pinterest-logo"
+                                            title="linkedin-logo"></a>
                                     </figure>
                                 </div>
 
-                                <div>
-                                    <figure class="icon-box-social">
-                                        <img src="/assets/hv2-home2/x-logo.svg" alt="x-logo" title="x-logo">
-                                    </figure>
-                                </div>
-
-                            </div>
-
-
-                            <div class="url-list-icon list-2-logos-no-animation" dir="rtl">
-
-                                <div>
-                                    <figure class="icon-box-social">
-                                        <img src="/assets/hv2-home2/sales-force-logo.svg" alt="sales-force-logo"
-                                            title="sales-force-logo">
-                                    </figure>
-                                </div>
-
-                                <div>
-                                    <figure class="icon-box-social">
-                                        <img src="/assets/hv2-home2/google-analytics-logo.svg"
-                                            alt="google-analytics-logo" title="google-analytics-logo">
-                                    </figure>
-                                </div>
-
-                                <div>
-                                    <figure class="icon-box-social">
-                                        <img src="/assets/hv2-home2/linkedin-logo.svg" alt="linkedin-logo"
-                                            title="linkedin-logo">
-                                    </figure>
-                                </div>
-
-                                <div>
-                                    <figure class="icon-box-social">
-                                        <img src="/assets/hv2-home2/instagram-logo.svg" alt="instagram-logo"
-                                            title="instagram-logo">
-                                    </figure>
-                                </div>
-
-                                <div>
-                                    <figure class="icon-box-social">
-                                        <img src="/assets/hv2-home2/google-business-logo.svg" alt="google-business-logo"
-                                            title="google-business-logo">
-                                    </figure>
-                                </div>
-
-                            </div>
-
-
-                            <div class="url-list-icon list-3-logos-no-animation">
-
-                                <div>
-                                    <figure class="icon-box-social">
-                                        <img src="/assets/hv2-home2/google-drive-logo.svg" alt="google-drive-logo"
-                                            title="google-drive-logo">
-                                    </figure>
-                                </div>
-
-                                <div>
-                                    <figure class="icon-box-social">
-                                        <img src="/assets/hv2-home2/canva-logo.svg" alt="canva-logo" title="canva-logo">
-                                    </figure>
-                                </div>
-
-                                <div>
-                                    <figure class="icon-box-social">
-                                        <img src="/assets/hv2-home2/giphy-logo.svg" alt="giphy-logo" title="giphy-logo">
-                                    </figure>
-                                </div>
-
-                                <div>
-                                    <figure class="icon-box-social">
-                                        <img src="/assets/hv2-home2/hubspot-logo.svg" alt="hubspot-logo"
-                                            title="hubspot-logo">
-                                    </figure>
-                                </div>
-
-                                <div>
-                                    <figure class="icon-box-social">
-                                        <img src="/assets/hv2-home2/slack-logo.svg" alt="slack-logo" title="slack-logo">
-                                    </figure>
-                                </div>
-
-                            </div>
-
-
-                            <div class="url-list-icon_logo list-4-logos-no-animation" dir="rtl">
-
-                                <div>
-                                    <figure class="icon-box-social">
-                                        <img src="/assets/hv2-home2/linkedin-partner-logo.svg"
-                                            alt="linkedin-partner-logo" title="linkedin-partner-logo">
-                                    </figure>
-                                </div>
-
-                                <div>
-                                    <figure class="icon-box-social">
-                                        <img src="/assets/hv2-home2/partner-network-logo-2.svg"
-                                            alt="partner-network-logo" title="partner-network-logo">
-                                    </figure>
-                                </div>
-
-                                <div>
-                                    <figure class="icon-box-social">
-                                        <img src="/assets/hv2-home2/tt-marketing-partners-logo.svg"
-                                            alt="tt-marketing-partners-logo" title="tt-marketing-partners-logo">
-                                    </figure>
-                                </div>
-
-                                <div>
-                                    <figure class="icon-box-social">
-                                        <img src="/assets/hv2-home2/m-business-partner-logo.svg"
-                                            alt="m-business-partner-logo" title="m-business-partner-logo">
-                                    </figure>
-                                </div>
-
-                            </div>
-
+                               
                         </div>
                     </div>
 
@@ -1097,11 +926,7 @@
                     <div class="block-social__buttons">
 
                         <div class="block-social__buttons-item">
-                            <a id="en-footer-cta-Trial" data-mobile-signup="/signup/"
-                                href="https://app.agorapulse.com/auth/signup?language=en" target="_self"
-                                class="hv2-button white">
-                                Try for free<span class="arrow"></span>
-                            </a>
+                           
                         </div>
 
                         <div class="block-social__buttons-item">
@@ -1125,47 +950,14 @@
         <div class="container">
             <div id="footer-nav" class="d-flex justify-content-between">
                 <a href="/" class="navbar-brand" title="agorapulse">
-                    <img class="brand" alt="agorapulse" src="/assets/logo.svg" width="140" height="29" />
+                    <img class="brand" alt="agorapulse" src="./logo.jpeg" width="100" height="auto" />
                 </a>
 
             </div>
-            <br>
-            <br>
 
 
-            <div id="legal-nav" class="d-flex justify-content-between">
-                <div class="d-flex legal-nav-left">
 
-                    <div class="social-links">
-                        <a href="https://facebook.com/agorapulse" target="_blank" title="Agorapulse Facebook page">
-                            <img class="lozad" width="24" height="24" data-src="/assets/footer-fb-1.png"
-                                alt="Facebook icon" /></a>
-                        <a href="https://www.instagram.com/agorapulse/" target="_blank"
-                            title="Agorapulse Instagram profile">
-                            <img class="lozad" width="24" height="24" data-src="/assets/footer-ig.png"
-                                alt="Instagram icon" /></a>
-                        <a href="https://twitter.com/agorapulse" target="_blank" title="Agorapulse X (Twitter) account">
-                            <img class="lozad" width="24" height="24" data-src="/assets/footer-x-logo.png"
-                                alt="X (Twitter) icon" /></a>
-                        <a href="https://www.youtube.com/user/AgoraPulse4Facebook" target="_blank"
-                            title="Agorapulse YouTube channel">
-                            <img class="lozad" width="24" height="24" data-src="/assets/footer-yt.png"
-                                alt="YouTube icon" /></a>
-                        <a href="https://www.pinterest.fr/agorapulse/" target="_blank"
-                            title="Agorapulse Pinterest account">
-                            <img class="lozad" width="24" height="24" data-src="/assets/footer-pinterest.png"
-                                alt="Pinterest icon" /></a>
-                        <a href="https://www.linkedin.com/company/agorapulse/" title="Agorapulse LinkedIn company page">
-                            <img class="lozad" width="24" height="24" data-src="/assets/footer-linkedin.png"
-                                alt="LinkedIn icon"></a>
-                        <a href="https://www.tiktok.com/@agorapulse" target="_blank" title="Agorapulse TikTok profile">
-                            <img class="lozad" width="24" height="24" data-src="/assets/footer-tt.svg"
-                                alt="TikTok icon" /></a>
-                    </div>
-                </div>
-
-
-            </div>
+      
         </div>
     </footer>
 
