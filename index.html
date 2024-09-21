@@ -318,68 +318,131 @@
         <script type="text/javascript" src="/assets/block_hero.js?6c9f92b407bcc35e1ed7" defer></script>
         
         <section class="block-hero">
-            <br>
-            <br>
             <div class="container">
                 <div class="block-hero__row">
-                    <div class="block-hero__col block-hero__col-content">
-                        <div class="block-hero__inner">
-
-                            <div class="block-hero__heading">
-                                <h1>An agency that can drive extra ordinary  <span>results to your business.</span></h1>
-                                
-                            </div>
-
-
-                            <div class="block-hero__content">
-                               
-                            </div>
-
-
-                            <div class="block-hero__buttons">
-
-                             
-
-                                <a id="en-hero-Demo" href="https://calendly.com/collabcrewhub-info/collabcrewhub-live-demo-1" target="_self" class="hv2-button orange">Book
-                                    a demo<span class="arrow"></span>
-                                </a>
-
-                            </div>
-
-
-
-
-
-
-
-                            <div class="block-hero__side-image mobile">
-                                <picture>
-                                    <source srcset="hero-4.png" type="image/webp" />
-                                    <img src="hero-4.png"
-                                        alt="Hero image of Agorapulse showing product screens" />
-                                </picture>
-                            </div>
-
-
-
-
+                  <div class="block-hero__col block-hero__col-content">
+                    <div class="block-hero__inner">
+                      <div class="block-hero__heading">
+                        <h1>An agency that can drive extraordinary <span>results to your business.</span></h1>
+                      </div>
+              
+                      <div class="block-hero__content"></div>
+              
+                      <!-- Container for Button and Timer -->
+                      <div class="block-hero__actions" style="display: flex; align-items: center; gap: 20px;">
+                        <div class="block-hero__buttons">
+                          <a id="en-hero-Demo" href="https://calendly.com/collabcrewhub-info/collabcrewhub-live-demo-1" target="_self" class="hv2-button orange">Book
+                            a demo<span class="arrow"></span>
+                          </a>
                         </div>
-                    </div>
-                    <div class="block-hero__col block-hero__col-image">
-                        <div class="block-hero__inner">
-
-                            <div class="block-hero__side-image">
-                                <picture>
-                                    <source srcset="hero-4.png" type="image/webp" />
-                                    <img src="hero-4.png"
-                                        alt="Hero image of Agorapulse showing product screens" class="" />
-                                </picture>
+              
+                        <!-- Timer Section -->
+                        <div class="timer-container">
+                          <div id="timer">
+                            <div class="time-box">
+                              <span id="days" class="time-value">00</span>
+                              <span class="time-label">Days</span>
                             </div>
-
+                            <div class="time-box">
+                              <span id="hours" class="time-value">00</span>
+                              <span class="time-label">Hours</span>
+                            </div>
+                            <div class="time-box">
+                              <span id="minutes" class="time-value">00</span>
+                              <span class="time-label">Minutes</span>
+                            </div>
+                            <div class="time-box">
+                              <span id="seconds" class="time-value">00</span>
+                              <span class="time-label">Seconds</span>
+                            </div>
+                          </div>
                         </div>
+                      </div>
+              
+                      <div class="block-hero__side-image mobile">
+                        <picture>
+                          <source srcset="hero-4.png" type="image/webp" />
+                          <img src="hero-4.png" alt="Hero image of Agorapulse showing product screens" />
+                        </picture>
+                      </div>
                     </div>
+                  </div>
+              
+                  <div class="block-hero__col block-hero__col-image">
+                    <div class="block-hero__inner">
+                      <div class="block-hero__side-image">
+                        <picture>
+                          <source srcset="hero-4.png" type="image/webp" />
+                          <img src="hero-4.png" alt="Hero image of Agorapulse showing product screens" class="" />
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </div>
+              </div>
+              
+              <!-- Countdown Timer Styles -->
+              <style>
+                .timer-container {
+                  background-color: rgba(255, 255, 255, 0.9); /* Slight background to ensure visibility */
+                  border-radius: 8px;
+                  padding: 8px; /* Adjust padding for smaller size */
+                  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+                  display: flex;
+                  align-items: center;
+                  margin-top: -20px
+                }
+              
+                .time-box {
+                  text-align: center;
+                }
+              
+                .time-value {
+                  font-size: 1.5em; /* Smaller value size */
+                  color: #de4848;
+                }
+              
+                .time-label {
+                  font-size: 0.6em; /* Smaller label size */
+                  color: #1a1a1a;
+                }
+              
+                #timer {
+                  display: flex;
+                  justify-content: center;
+                  gap: 15px; /* Adjust the spacing between each time box */
+                }
+              </style>
+              
+              <!-- Timer functionality -->
+              <script>
+                function countdownTimer(endDate) {
+                  const timer = setInterval(function () {
+                    const now = new Date().getTime();
+                    const distance = endDate - now;
+              
+                    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+              
+                    document.getElementById("days").innerText = days;
+                    document.getElementById("hours").innerText = hours;
+                    document.getElementById("minutes").innerText = minutes;
+                    document.getElementById("seconds").innerText = seconds;
+              
+                    if (distance < 0) {
+                      clearInterval(timer);
+                      document.getElementById("timer").innerHTML = "EXPIRED";
+                    }
+                  }, 1000);
+                }
+              
+                // Set the date for the countdown
+                const offerEndDate = new Date("Dec 31, 2024 23:59:59").getTime();
+                countdownTimer(offerEndDate);
+              </script>
+              
         </section>
 
 
@@ -401,132 +464,93 @@
 
         <section class="block-business"
         style="background-image: url(/assets/hv2-home2/bg-business-sm.png); background-color: #FFF9F4; position: relative;">
- <!-- Timer Section -->
- <style>
-   /* Countdown Timer Styles */
-   .timer-container {
-     position: absolute;
-     top: 10px; /* Adjust the distance from the top of the section */
-     right: 10px; /* Adjust the distance from the right corner */
-     background-color: rgba(255, 255, 255, 0.9); /* Slight background to ensure visibility */
-     border-radius: 8px;
-     padding: 10px;
-     z-index: 10; /* Keep the timer on top */
-     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-   }
-
-   h2 {
-     margin: 0;
-     font: 300 1.2em "Lato";
-     text-transform: uppercase;
-   }
-
-   #timer {
-   
-     gap: 10px;
-   }
-
-   .time-box {
-     text-align: center;
-   }
-
-   .time-value {
-     font-size: 2em;
-     color: #de4848;
-   }
-
-   .time-label {
-     font-size: 0.7em;
-     color: #1a1a1a;
-   }
- </style>
-
- <div class="timer-container">
-   <div id="timer">
-     <div class="time-box">
-       <span id="days" class="time-value">00</span>
-       <span class="time-label">Days</span>
-     </div>
-     <div class="time-box">
-       <span id="hours" class="time-value">00</span>
-       <span class="time-label">Hours</span>
-     </div>
-     <div class="time-box">
-       <span id="minutes" class="time-value">00</span>
-       <span class="time-label">Minutes</span>
-     </div>
-     <div class="time-box">
-       <span id="seconds" class="time-value">00</span>
-       <span class="time-label">Seconds</span>
-     </div>
-   </div>
- </div>
-
- <script>
-   // Timer functionality
-   function countdownTimer(endDate) {
-     const timer = setInterval(function () {
-       const now = new Date().getTime();
-       const distance = endDate - now;
-
-       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-       const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-       document.getElementById("days").innerText = days;
-       document.getElementById("hours").innerText = hours;
-       document.getElementById("minutes").innerText = minutes;
-       document.getElementById("seconds").innerText = seconds;
-
-       if (distance < 0) {
-         clearInterval(timer);
-         document.getElementById("timer").innerHTML = "EXPIRED";
-       }
-     }, 1000);
-   }
-
-   // Set the date for the countdown
-   const offerEndDate = new Date("Dec 31, 2024 23:59:59").getTime();
-   countdownTimer(offerEndDate);
- </script>
-
- <div class="container">
-   <div class="block-business__heading" data-sal="slide-up" data-sal-duration="600" data-sal-delay="200">
-     <div class="block-business__text"></div>
-   </div>
-
-   <div class="block-business__cards">
-     <!-- Card items as before -->
-     <div class="block-business__card-item" data-sal="slide-up" data-sal-duration="600" data-sal-delay="0">
-       <div class="block-business__card-inner">
-         <h3 class="block-business__card-title">Streamline your social<br>content management</h3>
-         <div class="block-business__card-text">
-           <p>Everything you need to easily manage your content and grow your brand across all major social media platforms.</p>
-         </div>
-       </div>
-     </div>
-
-     <div class="block-business__card-item" data-sal="slide-up" data-sal-duration="600" data-sal-delay="200">
-       <div class="block-business__card-inner">
-         <h3 class="block-business__card-title">Enhance team<br>collaboration</h3>
-         <div class="block-business__card-text">
-           <p>Remove the internal friction and downright annoyance of having to send multiple emails and messages to get approvals.</p>
-         </div>
-       </div>
-     </div>
-
-     <div class="block-business__card-item" data-sal="slide-up" data-sal-duration="600" data-sal-delay="400">
-       <div class="block-business__card-inner">
-         <h3 class="block-business__card-title">Empower your team with actionable insights</h3>
-         <div class="block-business__card-text">
-           <p>Measure the metrics that matter to your brand. Get the insights and data you need to craft posts and cultivate conversations that grow your business.</p>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
-</section>
+    
+      <div class="container">
+       <center> <h1>Our Clients <span>Satisfaction Voices</span></center></h1>
+        <div class="block-business__heading" data-sal="slide-up" data-sal-duration="600" data-sal-delay="200">
+          <div class="block-business__text"></div>
+        </div>
+    
+        <div class="block-business__cards">
+          <!-- Card items with audio controls -->
+          <div class="block-business__card-item" data-sal="slide-up" data-sal-duration="600" data-sal-delay="0">
+            <div class="block-business__card-inner">
+              <h3 class="block-business__card-title">Streamline your social<br>content management</h3>
+              <div class="block-business__card-audio">
+                <audio controls>
+                  <source src="audio-file-1.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+          </div>
+    
+          <div class="block-business__card-item" data-sal="slide-up" data-sal-duration="600" data-sal-delay="200">
+            <div class="block-business__card-inner">
+              <h3 class="block-business__card-title">Enhance team<br>collaboration</h3>
+              <div class="block-business__card-audio">
+                <audio controls>
+                  <source src="audio-file-2.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+          </div>
+    
+          <div class="block-business__card-item" data-sal="slide-up" data-sal-duration="600" data-sal-delay="400">
+            <div class="block-business__card-inner">
+              <h3 class="block-business__card-title">Empower your team with actionable insights</h3>
+              <div class="block-business__card-audio">
+                <audio controls>
+                  <source src="audio-file-3.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Mobile version of the cards with audio -->
+        <div class="block-business__cards mobile">
+          <div class="block-business__card-item">
+            <div class="block-business__card-inner">
+              <h3 class="block-business__card-title">Streamline your social<br>content management</h3>
+              <div class="block-business__card-audio">
+                <audio controls>
+                  <source src="audio-file-1.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+          </div>
+    
+          <div class="block-business__card-item">
+            <div class="block-business__card-inner">
+              <h3 class="block-business__card-title">Enhance team<br>collaboration</h3>
+              <div class="block-business__card-audio">
+                <audio controls>
+                  <source src="audio-file-2.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+          </div>
+    
+          <div class="block-business__card-item">
+            <div class="block-business__card-inner">
+              <h3 class="block-business__card-title">Empower your team with actionable insights</h3>
+              <div class="block-business__card-audio">
+                <audio controls>
+                  <source src="audio-file-3.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
 
 
 
