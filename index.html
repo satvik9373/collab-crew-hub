@@ -294,9 +294,10 @@
                 display: flex;
                 justify-content: flex-end; /* Aligns timer to the right */
                 align-items: center; /* Vertically centers the timer */
-                margin-right: 40px; /* Adjusts space from the right edge */
-                /* Optional: Adjust left margin to shift the timer slightly to the left */
-                margin-left: auto; /* Pushes the timer container to the left within its space */
+                position: sticky; /* Makes the timer sticky */
+                right: 0; /* Sticks the timer to the right side */
+                margin-right: 30px; /* Adds some margin to the right */
+                top: 10px; /* Allows slight stickiness with 10px offset */
             }
     
             .container {
@@ -311,7 +312,6 @@
             }
     
             #timer {
-                display: flex;
                 justify-content: center;
                 gap: 10px; /* Adjust spacing between time boxes */
             }
@@ -336,7 +336,6 @@
             }
     
             .navbar-menu {
-                display: flex;
                 justify-content: space-between; /* Ensure space between items */
                 align-items: center; /* Vertically centers the navbar items */
             }
@@ -344,12 +343,9 @@
     
         <div class="navbar-menu">
             <div class="container">
-                <a href="/" class="navbar-brand" title="agorapulse">
-                    <img class="brand" alt="agorapulse" src="./logo.jpeg" width="100" height="auto">
-                </a>
                 <div class="navbar-mobile-shortcuts">
-                    <a class="hv2-button orange" href="/request-demo/" id="scroll-en-nav-Demo">See a demo<span
-                            class="arrow"></span></a>
+                    <a class="hv2-button orange" href="/request-demo/" id="scroll-en-nav-Demo">See a demo
+                        <span class="arrow"></span></a>
                     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#mainNav"
                         aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation" id="navcollapse">
                     </button>
@@ -408,6 +404,8 @@
             countdownTimer(offerEndDate);
         </script>
     </nav>
+    
+    
     
     
     
