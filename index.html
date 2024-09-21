@@ -290,15 +290,18 @@
     <nav class="navbar navbar-expand-lg hv2-top-nav hv2-big-menu" id="myNavbar">
         <style>
             /* Countdown Timer Styles */
-            .timer-container {
-                display: flex;
-                justify-content: flex-end; /* Aligns timer to the right */
-                align-items: center; /* Vertically centers the timer */
-                position: sticky; /* Makes the timer sticky */
-                right: 0; /* Sticks the timer to the right side */
-                margin-right: 30px; /* Adds some margin to the right */
-                top: 10px; /* Allows slight stickiness with 10px offset */
-            }
+            /* Countdown Timer Styles */
+.timer-container {
+    display: flex;
+    justify-content: flex-end; /* Aligns timer to the right */
+    align-items: center; /* Vertically centers the timer */
+    position: sticky; /* Makes the timer sticky */
+    right: 0; /* Sticks the timer to the right side */
+    margin-right: 0; /* Removes margin to stick to the edge */
+    top: 10px; /* Slight stickiness from the top */
+    z-index: 9999; /* Ensures it stays on top of other content */
+}
+
     
             .container {
                 text-align: center;
