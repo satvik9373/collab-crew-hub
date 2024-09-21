@@ -288,126 +288,20 @@
 <body class="hv2 hv2-home h-home2 top-nav">
 
     <nav class="navbar navbar-expand-lg hv2-top-nav hv2-big-menu" id="myNavbar">
-        <style>
-            /* Countdown Timer Styles */
-            /* Countdown Timer Styles */
-.timer-container {
-    display: flex;
-    justify-content: flex-end; /* Aligns timer to the right */
-    align-items: center; /* Vertically centers the timer */
-    position: sticky; /* Makes the timer sticky */
-    right: 0; /* Sticks the timer to the right side */
-    margin-right: 0; /* Removes margin to stick to the edge */
-    top: 10px; /* Slight stickiness from the top */
-    z-index: 9999; /* Ensures it stays on top of other content */
-}
-
-    
-            .container {
-                text-align: center;
-                margin: 0; /* Remove margin to fit within the navbar */
-            }
-    
-            h2 {
-                margin: 0; /* Remove margin for navbar layout */
-                font: 300 1.2em "Lato"; /* Adjust font size */
-                text-transform: uppercase;
-            }
-    
-            #timer {
-                justify-content: center;
-                gap: 10px; /* Adjust spacing between time boxes */
-            }
-    
-            .time-box {
-                background: #fff;
-                border-radius: 8px;
-                box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); /* Adjust shadow for smaller size */
-                padding: 10px; /* Adjust padding for smaller size */
-                text-align: center;
-            }
-    
-            .time-value {
-                font-size: 2em; /* Adjust font size */
-                color: #de4848;
-                display: block;
-            }
-    
-            .time-label {
-                font-size: 0.7em; /* Adjust font size */
-                color: #1a1a1a;
-            }
-    
-            .navbar-menu {
-                justify-content: space-between; /* Ensure space between items */
-                align-items: center; /* Vertically centers the navbar items */
-            }
-        </style>
-    
-        <div class="navbar-menu">
+             <div class="navbar-menu">
             <div class="container">
+                <a href="/" class="navbar-brand" title="agorapulse">
+                    <img class="brand" alt="agorapulse" src="./logo.jpeg" width="100" height="auto">
+                </a>
                 <div class="navbar-mobile-shortcuts">
-                    <a class="hv2-button orange" href="/request-demo/" id="scroll-en-nav-Demo">See a demo
+                    <a class="hv2-button orange" href="https://calendly.com/collabcrewhub-info/collabcrewhub-live-demo-1" id="scroll-en-nav-Demo">See a demo
                         <span class="arrow"></span></a>
                     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#mainNav"
                         aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation" id="navcollapse">
                     </button>
                 </div>
             </div>
-    
-            <!-- Timer Section -->
-            <div class="timer-container">
-                <div id="timer">
-                    <div class="time-box">
-                        <span id="days" class="time-value">00</span>
-                        <span class="time-label">Days</span>
-                    </div>
-                    <div class="time-box">
-                        <span id="hours" class="time-value">00</span>
-                        <span class="time-label">Hours</span>
-                    </div>
-                    <div class="time-box">
-                        <span id="minutes" class="time-value">00</span>
-                        <span class="time-label">Minutes</span>
-                    </div>
-                    <div class="time-box">
-                        <span id="seconds" class="time-value">00</span>
-                        <span class="time-label">Seconds</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <script>
-            // Timer functionality
-            function countdownTimer(endDate) {
-                const timer = setInterval(function () {
-                    const now = new Date().getTime();
-                    const distance = endDate - now;
-    
-                    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-                    document.getElementById("days").innerText = days;
-                    document.getElementById("hours").innerText = hours;
-                    document.getElementById("minutes").innerText = minutes;
-                    document.getElementById("seconds").innerText = seconds;
-    
-                    if (distance < 0) {
-                        clearInterval(timer);
-                        document.getElementById("timer").innerHTML = "EXPIRED";
-                    }
-                }, 1000);
-            }
-    
-            // Set the date for the countdown
-            const offerEndDate = new Date("Dec 31, 2024 23:59:59").getTime();
-            countdownTimer(offerEndDate);
-        </script>
     </nav>
-    
     
     
     
@@ -433,13 +327,12 @@
 
                             <div class="block-hero__heading">
                                 <h1>An agency that can drive extra ordinary  <span>results to your business.</span></h1>
+                                
                             </div>
 
 
                             <div class="block-hero__content">
-                                <p>Save time, stay organized, and easily manage your social media with Agorapulse.
-                                    Measure and drive real business impact from your social campaigns-all in one
-                                    platform.</p>
+                               
                             </div>
 
 
@@ -447,7 +340,7 @@
 
                              
 
-                                <a id="en-hero-Demo" href="/request-demo/" target="_self" class="hv2-button orange">Book
+                                <a id="en-hero-Demo" href="https://calendly.com/collabcrewhub-info/collabcrewhub-live-demo-1" target="_self" class="hv2-button orange">Book
                                     a demo<span class="arrow"></span>
                                 </a>
 
@@ -461,8 +354,8 @@
 
                             <div class="block-hero__side-image mobile">
                                 <picture>
-                                    <source srcset="/assets/hv2-home2/hero-image-4.webp" type="image/webp" />
-                                    <img src="/assets/hv2-home2/hero-image-4.png"
+                                    <source srcset="hero-4.png" type="image/webp" />
+                                    <img src="hero-4.png"
                                         alt="Hero image of Agorapulse showing product screens" />
                                 </picture>
                             </div>
@@ -477,8 +370,8 @@
 
                             <div class="block-hero__side-image">
                                 <picture>
-                                    <source srcset="/assets/hv2-home2/hero-image-4.webp" type="image/webp" />
-                                    <img src="/assets/hv2-home2/hero-image-4.png"
+                                    <source srcset="hero-4.png" type="image/webp" />
+                                    <img src="hero-4.png"
                                         alt="Hero image of Agorapulse showing product screens" class="" />
                                 </picture>
                             </div>
@@ -507,130 +400,134 @@
 
 
         <section class="block-business"
-            style="background-image: url(/assets/hv2-home2/bg-business-sm.png);background-color: #FFF9F4;">
-            <div class="container">
+        style="background-image: url(/assets/hv2-home2/bg-business-sm.png); background-color: #FFF9F4; position: relative;">
+ <!-- Timer Section -->
+ <style>
+   /* Countdown Timer Styles */
+   .timer-container {
+     position: absolute;
+     top: 10px; /* Adjust the distance from the top of the section */
+     right: 10px; /* Adjust the distance from the right corner */
+     background-color: rgba(255, 255, 255, 0.9); /* Slight background to ensure visibility */
+     border-radius: 8px;
+     padding: 10px;
+     z-index: 10; /* Keep the timer on top */
+     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+   }
 
-                <div class="block-business__heading" data-sal="slide-up" data-sal-duration="600" data-sal-delay="200">
-                    <div class="block-business__text">
-                    </div>
-                </div>
+   h2 {
+     margin: 0;
+     font: 300 1.2em "Lato";
+     text-transform: uppercase;
+   }
 
+   #timer {
+   
+     gap: 10px;
+   }
 
-                <div class="block-business__cards">
+   .time-box {
+     text-align: center;
+   }
 
+   .time-value {
+     font-size: 2em;
+     color: #de4848;
+   }
 
-                    <div class="block-business__card-item" data-sal="slide-up" data-sal-duration="600"
-                        data-sal-delay="0">
-                        <div class="block-business__card-inner">
+   .time-label {
+     font-size: 0.7em;
+     color: #1a1a1a;
+   }
+ </style>
 
-                           
+ <div class="timer-container">
+   <div id="timer">
+     <div class="time-box">
+       <span id="days" class="time-value">00</span>
+       <span class="time-label">Days</span>
+     </div>
+     <div class="time-box">
+       <span id="hours" class="time-value">00</span>
+       <span class="time-label">Hours</span>
+     </div>
+     <div class="time-box">
+       <span id="minutes" class="time-value">00</span>
+       <span class="time-label">Minutes</span>
+     </div>
+     <div class="time-box">
+       <span id="seconds" class="time-value">00</span>
+       <span class="time-label">Seconds</span>
+     </div>
+   </div>
+ </div>
 
+ <script>
+   // Timer functionality
+   function countdownTimer(endDate) {
+     const timer = setInterval(function () {
+       const now = new Date().getTime();
+       const distance = endDate - now;
 
-                            <h3 class="block-business__card-title">Streamline your social<br>content management</h3>
+       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+       const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+       document.getElementById("days").innerText = days;
+       document.getElementById("hours").innerText = hours;
+       document.getElementById("minutes").innerText = minutes;
+       document.getElementById("seconds").innerText = seconds;
 
-                            <div class="block-business__card-text">
-                                <p>Everything you need to easily manage your content and grow your brand across all
-                                    major social media platforms.</p>
-                            </div>
+       if (distance < 0) {
+         clearInterval(timer);
+         document.getElementById("timer").innerHTML = "EXPIRED";
+       }
+     }, 1000);
+   }
 
-                        </div>
-                    </div>
+   // Set the date for the countdown
+   const offerEndDate = new Date("Dec 31, 2024 23:59:59").getTime();
+   countdownTimer(offerEndDate);
+ </script>
 
+ <div class="container">
+   <div class="block-business__heading" data-sal="slide-up" data-sal-duration="600" data-sal-delay="200">
+     <div class="block-business__text"></div>
+   </div>
 
-                    <div class="block-business__card-item" data-sal="slide-up" data-sal-duration="600"
-                        data-sal-delay="200">
-                        <div class="block-business__card-inner">
+   <div class="block-business__cards">
+     <!-- Card items as before -->
+     <div class="block-business__card-item" data-sal="slide-up" data-sal-duration="600" data-sal-delay="0">
+       <div class="block-business__card-inner">
+         <h3 class="block-business__card-title">Streamline your social<br>content management</h3>
+         <div class="block-business__card-text">
+           <p>Everything you need to easily manage your content and grow your brand across all major social media platforms.</p>
+         </div>
+       </div>
+     </div>
 
-                           
+     <div class="block-business__card-item" data-sal="slide-up" data-sal-duration="600" data-sal-delay="200">
+       <div class="block-business__card-inner">
+         <h3 class="block-business__card-title">Enhance team<br>collaboration</h3>
+         <div class="block-business__card-text">
+           <p>Remove the internal friction and downright annoyance of having to send multiple emails and messages to get approvals.</p>
+         </div>
+       </div>
+     </div>
 
+     <div class="block-business__card-item" data-sal="slide-up" data-sal-duration="600" data-sal-delay="400">
+       <div class="block-business__card-inner">
+         <h3 class="block-business__card-title">Empower your team with actionable insights</h3>
+         <div class="block-business__card-text">
+           <p>Measure the metrics that matter to your brand. Get the insights and data you need to craft posts and cultivate conversations that grow your business.</p>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+</section>
 
-                            <h3 class="block-business__card-title">Enhance team<br>collaboration</h3>
-
-
-                            <div class="block-business__card-text">
-                                <p>Remove the internal friction and downright annoyance of having to send multiple
-                                    emails and messages to get approvals.</p>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    <div class="block-business__card-item" data-sal="slide-up" data-sal-duration="600"
-                        data-sal-delay="400">
-                        <div class="block-business__card-inner">
-
-
-
-
-                            <h3 class="block-business__card-title">Empower your team with actionable insights</h3>
-
-
-                            <div class="block-business__card-text">
-                                <p>Measure the metrics that matter to your brand. Get the insights and data you need to
-                                    craft posts and cultivate conversations that grow your business.</p>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="block-business__cards mobile">
-
-                    <div class="block-business__card-item">
-                        <div class="block-business__card-inner">
-
-
-
-                            <h3 class="block-business__card-title">Streamline your social<br>content management</h3>
-
-
-                            <div class="block-business__card-text">
-                                <p>Everything you need to easily manage your content and grow your brand across all
-                                    major social media platforms.</p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="block-business__card-item">
-                        <div class="block-business__card-inner">
-
-
-
-
-                            <h3 class="block-business__card-title">Enhance team<br>collaboration</h3>
-
-
-                            <div class="block-business__card-text">
-                                <p>Remove the internal friction and downright annoyance of having to send multiple
-                                    emails and messages to get approvals.</p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="block-business__card-item">
-                        <div class="block-business__card-inner">
-
-
-
-
-                            <h3 class="block-business__card-title">Empower your team with actionable insights</h3>
-
-
-                            <div class="block-business__card-text">
-                                <p>Measure the metrics that matter to your brand. Get the insights and data you need to
-                                    craft posts and cultivate conversations that grow your business.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          
-        </section>
 
 
         <link href="/assets/block_tabs.css?6c9f92b407bcc35e1ed7" rel="stylesheet">
@@ -648,14 +545,12 @@
                         <div class="inner-integration-content" data-sal="slide-up" data-sal-duration="600"
                             data-sal-delay="200">
 
-                            <h2>Works perfectly with your favorite tools and platforms</h2>
-                            <p>No more jumping between social networks and other solutions. Use Agorapulse to centralize
-                                all of your team's social media marketing activities.</p>
+                            <h2>Explore how some of my clients scale from zero to hero</h2>
 
 
                             <div class="block-hero__buttons">
 
-                                <a id="en-integrations" href="/integrations/" target="_self"
+                                <a id="en-integrations" href="https://calendly.com/collabcrewhub-info/collabcrewhub-live-demo-1" target="_self"
                                     class="hv2-button white">Book a Demo<span class="arrow"></span>
                                 </a>
 
@@ -710,7 +605,7 @@
 
         <section class="block-reviews">
             <div class="container">
-                <h2 data-sal="slide-up" data-sal-duration="600" data-sal-delay="200">What makes <span>Agorapulse
+                <h2 data-sal="slide-up" data-sal-duration="600" data-sal-delay="200">What makes <span>collab-crew-hub
                         great?</span></h2>
                 <div class="show-desktop-table">
                     <div class="row list-item-data-js">
@@ -720,23 +615,22 @@
                                 <div class="detail-data-title-review">
                                     <h6 class="detail-data-title-review-h6"><i class="icon-heart"></i> <span>Intuitive
                                             and easy to use</span></h6>
-                                    <p>Agorapulse's user-friendly UI/UX boosts<br>team productivity by saving
-                                        <strong>50% of content creation time.</strong></p>
+                                            <p>collab-crew-hub's unique ideas and<br>a visible creatives helps our leads understanding that what we do in a simple manner
+                                                <strong>Very innovative and humble team.</strong></p>
                                 </div>
                                 <div class="detail-review-person">
                                     <div class="author-review">
                                         <figure>
-                                            <img src="/assets/hv2-home2/nadira-davis.png" alt="nadira davis"
-                                                title="nadira davis">
+                                            <img src="https://pxraja.com/wp-content/uploads/2024/07/no-dp_16.webp" alt="Rohan Sharma"
+                                                title="Rohan Sharma">
                                         </figure>
                                         <div>
-                                            <span class="review-name">Nadira Davis</span>
-                                            <span class="review-position">OneStreet Residential</span>
+                                            <span class="review-name">Rohan Sharma</span>
+                                            <span class="review-position">Broker</span>
                                         </div>
                                     </div>
                                     <div class="detail-review-item">
-                                        <p>“Posting content for 21 different communities has been easier, thanks to
-                                            Agorapulse’s excellent user-friendliness.”</p>
+                                        <p>On time Services and work provided by them 10 out of 10 rating </p>
                                     </div>
                                 </div>
                             </div>
@@ -754,12 +648,12 @@
                                 <div class="detail-review-person">
                                     <div class="author-review">
                                         <figure>
-                                            <img src="/assets/hv2-home2/kyle-riches.png" alt="Kyle Riches"
-                                                title="Kyle Riches">
+                                            <img src="https://pxraja.com/wp-content/uploads/2024/07/no-dp_16.webp" alt="Aarav Mehra"
+                                                title="Aarav Mehra">
                                         </figure>
                                         <div>
-                                            <span class="review-name">Kyle Riches</span>
-                                            <span class="review-position">Collaborative Drug Discovery</span>
+                                            <span class="review-name">Aarav Mehra</span>
+                                            <span class="review-position">Software Development Agency</span>
                                         </div>
                                     </div>
                                     <div class="detail-review-item">
@@ -775,23 +669,23 @@
                                 <div class="detail-data-title-review">
                                     <h6 class="detail-data-title-review-h6"><i class="icon-heart"></i>
                                         <span>Cost-effective and transparent pricing</span></h6>
-                                    <p>Users who switch to Agorapulse from other social media tools don’t suffer hidden
+                                    <p>Users who switch to collab-crew-hub from other marketing media agencies don’t suffer hidden
                                         costs, so they average <strong>savings of 30% for teams.</strong></p>
                                 </div>
                                 <div class="detail-review-person">
                                     <div class="author-review">
                                         <figure>
-                                            <img src="/assets/hv2-home2/chris-edmonds.png" alt="Chris Edmonds"
-                                                title="Chris Edmonds">
+                                            <img src="https://pxraja.com/wp-content/uploads/2024/07/no-dp_16.webp" alt="Meera Shah"
+                                                title="Meera Shah">
                                         </figure>
                                         <div>
-                                            <span class="review-name">Chris Edmonds</span>
-                                            <span class="review-position">The Purposeful Culture Group</span>
+                                            <span class="review-name">Dr.Meera Shah</span>
+                                            <span class="review-position">Dentist</span>
                                         </div>
                                     </div>
                                     <div class="detail-review-item">
                                         <p>“We needed a reliable platform that was fast, simple, and fairly priced.
-                                            Agorapulse was a great solution for our needs."</p>
+                                            collab-crew-hub was a great solution for our needs."</p>
                                     </div>
                                 </div>
                             </div>
@@ -805,45 +699,45 @@
                             <div class="inner-detail-review">
                                 <div class="detail-data-title-review">
                                     <h6><i class="icon-heart"></i> <span>Intuitive and easy to use</span></h6>
-                                    <p>Agorapulse's user-friendly UI/UX boosts<br>team productivity by saving
-                                        <strong>50% of content creation time.</strong></p>
+                                    <p>collab-crew-hub's unique ideas and<br>a visible creatives helps our leads understanding that what we do in a simple manner
+                                        <strong>Very innovative and humble team.</strong></p>
                                 </div>
                                 <div class="detail-review-person">
                                     <div class="author-review">
                                         <figure>
-                                            <img src="/assets/hv2-home2/nadira-davis.png" alt="nadira davis"
-                                                title="nadira davis">
+                                            <img src="https://pxraja.com/wp-content/uploads/2024/07/no-dp_16.webp" alt="Rohan Sharma"
+                                                title="Rohan Sharma">
                                         </figure>
                                         <div>
-                                            <span class="review-name">Nadira Davis</span>
-                                            <span class="review-position">OneStreet Residential</span>
+                                            <span class="review-name">Rohan Sharma</span>
+                                            <span class="review-position">Builder</span>
                                         </div>
                                     </div>
                                     <div class="detail-review-item">
-                                        <p>“Posting content for 21 different communities has been easier, thanks to
-                                            Agorapulse’s excellent user-friendliness.”</p>
+                                        <p>On time Services and work provided by them 10 out of 10 rating </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-md-4">
-                            <div class="inner-detail-review">
+                            <div class="inner-detail-review" data-sal="slide-up" data-sal-duration="600"
+                                data-sal-delay="200">
                                 <div class="detail-data-title-review">
-                                    <h6><i class="icon-heart"></i> <span>Get backed by the best support <br>team in the
-                                            industry</span></h6>
+                                    <h6 class="detail-data-title-review-h6"><i class="icon-heart"></i> <span>Get backed
+                                            by the best support <br>team in the industry</span></h6>
                                     <p>Our support team is ready to assist you with an average response time of 30
                                         minutes or less, and a <strong>96% user satisfaction rating.</strong></p>
                                 </div>
                                 <div class="detail-review-person">
                                     <div class="author-review">
                                         <figure>
-                                            <img src="/assets/hv2-home2/kyle-riches.png" alt="Kyle Riches"
-                                                title="Kyle Riches">
+                                            <img src="https://pxraja.com/wp-content/uploads/2024/07/no-dp_16.webp" alt="Aarav Mehra"
+                                                title="Aarav Mehra">
                                         </figure>
                                         <div>
-                                            <span class="review-name">Kyle Riches</span>
-                                            <span class="review-position">Collaborative Drug Discovery</span>
+                                            <span class="review-name">Aarav Mehra</span>
+                                            <span class="review-position">Software Development Agency</span>
                                         </div>
                                     </div>
                                     <div class="detail-review-item">
@@ -854,27 +748,28 @@
                         </div>
 
                         <div class="col-md-4">
-                            <div class="inner-detail-review">
+                            <div class="inner-detail-review" data-sal="slide-up" data-sal-duration="600"
+                                data-sal-delay="400">
                                 <div class="detail-data-title-review">
-                                    <h6><i class="icon-heart"></i> <span>Cost-effective and transparent pricing</span>
-                                    </h6>
-                                    <p>Users who switch to Agorapulse from other social media tools don’t suffer hidden
+                                    <h6 class="detail-data-title-review-h6"><i class="icon-heart"></i>
+                                        <span>Cost-effective and transparent pricing</span></h6>
+                                    <p>Users who switch to collab-crew-hub from other marketing media agencies don’t suffer hidden
                                         costs, so they average <strong>savings of 30% for teams.</strong></p>
                                 </div>
                                 <div class="detail-review-person">
                                     <div class="author-review">
                                         <figure>
-                                            <img src="/assets/hv2-home2/chris-edmonds.png" alt="Chris Edmonds"
-                                                title="Chris Edmonds">
+                                            <img src="https://pxraja.com/wp-content/uploads/2024/07/no-dp_16.webp" alt="Meera Shah"
+                                                title="Meera Shah">
                                         </figure>
                                         <div>
-                                            <span class="review-name">Chris Edmonds</span>
-                                            <span class="review-position">The Purposeful Culture Group</span>
+                                            <span class="review-name">Dr.Meera Shah</span>
+                                            <span class="review-position">Dentist</span>
                                         </div>
                                     </div>
                                     <div class="detail-review-item">
                                         <p>“We needed a reliable platform that was fast, simple, and fairly priced.
-                                            Agorapulse was a great solution for our needs."</p>
+                                            collab-crew-hub was a great solution for our needs."</p>
                                     </div>
                                 </div>
                             </div>
@@ -915,7 +810,7 @@
                 <div class="block-social__info">
 
                     <div class="block-social__heading">
-                        <h2>Supercharge your social media goals with Agorapulse</h2>
+                        <h2>Supercharge your digital marketing goals with collab-crew-hub</h2>
                     </div>
 
 
@@ -931,7 +826,7 @@
                         </div>
 
                         <div class="block-social__buttons-item">
-                            <a id="en-footer-cta-Demo" href="/request-demo/" target="_self" class="hv2-button orange">
+                            <a id="en-footer-cta-Demo" href="https://calendly.com/collabcrewhub-info/collabcrewhub-live-demo-1" target="_self" class="hv2-button orange">
                                 Book a demo<span class="arrow"></span>
                             </a>
                         </div>
