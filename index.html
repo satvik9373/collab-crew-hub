@@ -320,128 +320,100 @@
         <section class="block-hero">
             <div class="container">
                 <div class="block-hero__row">
-                  <div class="block-hero__col block-hero__col-content">
-                    <div class="block-hero__inner">
-                      <div class="block-hero__heading">
-                        <h1>An agency that can drive extraordinary <span>results to your business.</span></h1>
-                      </div>
-              
-                      <div class="block-hero__content"></div>
-              
-                      <!-- Container for Button and Timer -->
-                      <div class="block-hero__actions" style="display: flex; align-items: center; gap: 20px;">
-                        <div class="block-hero__buttons">
-                          <a id="en-hero-Demo" href="https://calendly.com/collabcrewhub-info/collabcrewhub-live-demo-1" target="_self" class="hv2-button orange">Book
-                            a demo<span class="arrow"></span>
-                          </a>
+                    <div class="block-hero__col block-hero__col-content">
+                      <div class="block-hero__inner">
+                        <div class="block-hero__heading">
+                          <h1>An agency that can drive extraordinary <span>results to your business.</span></h1>
                         </div>
-              
-                        <!-- Timer Section -->
-                        <div class="timer-container">
-                          <div id="timer">
-                            <div class="time-box">
-                              <span id="days" class="time-value">00</span>
-                              <span class="time-label">Days</span>
-                            </div>
-                            <div class="time-box">
-                              <span id="hours" class="time-value">00</span>
-                              <span class="time-label">Hours</span>
-                            </div>
-                            <div class="time-box">
-                              <span id="minutes" class="time-value">00</span>
-                              <span class="time-label">Minutes</span>
-                            </div>
-                            <div class="time-box">
-                              <span id="seconds" class="time-value">00</span>
-                              <span class="time-label">Seconds</span>
+                  
+                        <div class="block-hero__content"></div>
+                  
+                        <!-- Container for Timer and Button -->
+                        <div class="block-hero__actions" style="display: flex; flex-direction: column; align-items: flex-start; gap: 20px;">
+                          
+                          <!-- Timer Section -->
+                          <div class="timer-container" style="background-color: rgba(255, 255, 255, 0.9); padding: 8px; border-radius: 8px; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); margin-top: -20px;">
+                            <div id="timer" style="display: flex; justify-content: center; gap: 15px;">
+                              <div class="time-box">
+                                <span id="days" class="time-value" style="font-size: 1.5em; color: #de4848;">00</span>
+                                <span class="time-label" style="font-size: 0.6em; color: #1a1a1a;">Days</span>
+                              </div>
+                              <div class="time-box">
+                                <span id="hours" class="time-value" style="font-size: 1.5em; color: #de4848;">00</span>
+                                <span class="time-label" style="font-size: 0.6em; color: #1a1a1a;">Hours</span>
+                              </div>
+                              <div class="time-box">
+                                <span id="minutes" class="time-value" style="font-size: 1.5em; color: #de4848;">00</span>
+                                <span class="time-label" style="font-size: 0.6em; color: #1a1a1a;">Minutes</span>
+                              </div>
+                              <div class="time-box">
+                                <span id="seconds" class="time-value" style="font-size: 1.5em; color: #de4848;">00</span>
+                                <span class="time-label" style="font-size: 0.6em; color: #1a1a1a;">Seconds</span>
+                              </div>
                             </div>
                           </div>
+                  
+                          <!-- Book a Demo Button -->
+                          <div class="block-hero__buttons">
+                            <a id="en-hero-Demo" href="https://calendly.com/collabcrewhub-info/collabcrewhub-live-demo-1" target="_self" class="hv2-button orange">
+                              Book a demo<span class="arrow"></span>
+                            </a>
+                          </div>
+                  
+                        </div>
+                  
+                        <div class="block-hero__side-image mobile">
+                          <picture>
+                            <source srcset="hero-4.png" type="image/webp" />
+                            <img src="hero-4.png" alt="Hero image of Agorapulse showing product screens" />
+                          </picture>
                         </div>
                       </div>
-              
-                      <div class="block-hero__side-image mobile">
-                        <picture>
-                          <source srcset="hero-4.png" type="image/webp" />
-                          <img src="hero-4.png" alt="Hero image of Agorapulse showing product screens" />
-                        </picture>
+                    </div>
+                  
+                    <div class="block-hero__col block-hero__col-image">
+                      <div class="block-hero__inner">
+                        <div class="block-hero__side-image">
+                          <picture>
+                            <source srcset="hero-4.png" type="image/webp" />
+                            <img src="hero-4.png" alt="Hero image of Agorapulse showing product screens" class="" />
+                          </picture>
+                        </div>
                       </div>
                     </div>
                   </div>
-              
-                  <div class="block-hero__col block-hero__col-image">
-                    <div class="block-hero__inner">
-                      <div class="block-hero__side-image">
-                        <picture>
-                          <source srcset="hero-4.png" type="image/webp" />
-                          <img src="hero-4.png" alt="Hero image of Agorapulse showing product screens" class="" />
-                        </picture>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <!-- Countdown Timer Styles -->
-              <style>
-                .timer-container {
-                  background-color: rgba(255, 255, 255, 0.9); /* Slight background to ensure visibility */
-                  border-radius: 8px;
-                  padding: 8px; /* Adjust padding for smaller size */
-                  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-                  display: flex;
-                  align-items: center;
-                  margin-top: -20px
-                }
-              
-                .time-box {
-                  text-align: center;
-                }
-              
-                .time-value {
-                  font-size: 1.5em; /* Smaller value size */
-                  color: #de4848;
-                }
-              
-                .time-label {
-                  font-size: 0.6em; /* Smaller label size */
-                  color: #1a1a1a;
-                }
-              
-                #timer {
-                  display: flex;
-                  justify-content: center;
-                  gap: 15px; /* Adjust the spacing between each time box */
-                }
-              </style>
-              
-              <!-- Timer functionality -->
-              <script>
-                function countdownTimer(endDate) {
-                  const timer = setInterval(function () {
-                    const now = new Date().getTime();
-                    const distance = endDate - now;
-              
-                    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-              
-                    document.getElementById("days").innerText = days;
-                    document.getElementById("hours").innerText = hours;
-                    document.getElementById("minutes").innerText = minutes;
-                    document.getElementById("seconds").innerText = seconds;
-              
-                    if (distance < 0) {
-                      clearInterval(timer);
-                      document.getElementById("timer").innerHTML = "EXPIRED";
+                  
+                  <!-- Countdown Timer Script -->
+                  <script>
+                    function countdownTimer(endDate) {
+                      const timer = setInterval(function () {
+                        const now = new Date().getTime();
+                        const distance = endDate - now;
+                  
+                        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                  
+                        document.getElementById("days").innerText = days;
+                        document.getElementById("hours").innerText = hours;
+                        document.getElementById("minutes").innerText = minutes;
+                        document.getElementById("seconds").innerText = seconds;
+                  
+                        if (distance < 0) {
+                          clearInterval(timer);
+                          document.getElementById("timer").innerHTML = "EXPIRED";
+                        }
+                      }, 1000);
                     }
-                  }, 1000);
-                }
-              
-                // Set the date for the countdown
-                const offerEndDate = new Date("Dec 31, 2024 23:59:59").getTime();
-                countdownTimer(offerEndDate);
-              </script>
+                  
+                    // Set the date for the countdown
+                    const offerEndDate = new Date("Dec 31, 2024 23:59:59").getTime();
+                    countdownTimer(offerEndDate);
+                  </script>
+                  
+              </div>
+         
               
         </section>
 
